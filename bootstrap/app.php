@@ -87,7 +87,7 @@ $app->configure('app');
      'ipWhitelist' => App\Http\Middleware\IpWhitelistMiddleware::class,
      //
  ]);
-
+//amged wageh
 /*
 |--------------------------------------------------------------------------
 | Register Service Providers

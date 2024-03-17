@@ -17,7 +17,6 @@ class TokenMiddleware
      */
     public function handle($request, Closure $next)
     {
-
         $remember_token = $request->header('remember_token') ;
         $user_code = $request->user_code;
         $user = User::where('user_code', $user_code)->first();

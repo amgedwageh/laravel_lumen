@@ -59,7 +59,7 @@ $app->singleton(
 | the default version. You may register other files below as needed.
 |
 */
-
+$app->register(Laravel\Tinker\TinkerServiceProvider::class);
 $app->configure('app');
 
 /*
@@ -100,7 +100,7 @@ $app->configure('app');
 */
 
 // $app->register(App\Providers\AppServiceProvider::class);
-// $app->register(App\Providers\AuthServiceProvider::class);
+ $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
 /*

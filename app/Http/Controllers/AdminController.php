@@ -21,6 +21,7 @@ class AdminController extends Controller
     }
     public function login (Request $request)
     {
+         //$uri = $request->path();
          $email = $request->email ;
          $passwordHash = $request->passwordHash ;
 
@@ -79,6 +80,9 @@ class AdminController extends Controller
 
         //else show questions
     }
-
+    public function show($id)
+    {
+        return User::findOrFail($id);
+    }
 
 }
